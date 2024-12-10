@@ -16,16 +16,16 @@ Process & Methodology
 
 3. Data Preparation and Preprocessing
 Preparation for training involved several preprocessing steps:
-1. Lowercase the text to standardize it.
-2. Remove unnecessary characters (e.g., punctuation, links, etc.).
-3. Convert it into a TensorFlow dataset for training.
-4. Shuffle, batch, and prefetch the dataset.
-5. Check a sample batch.
-6. Double-check the label distribution to ensure balance.
+- Lowercase the text to standardize it.
+- Remove unnecessary characters (e.g., punctuation, links, etc.).
+- Convert it into a TensorFlow dataset for training.
+- Shuffle, batch, and prefetch the dataset.
+- Check a sample batch.
+- Double-check the label distribution to ensure balance.
 My dataset is pretty imbalanced which definitely caused my model to struggle. If I had more time, my next steps would be to oversample the minority class or use techniques like SMOTE.
 0  (biased):  113
 1  (unbiased):  85
-7. Tokenization: I did use a tokenizer during training, but instead of a traditional Tokenizer (e.g., from keras.preprocessing.text), I used a TextVectorization layer as part of my preprocessing pipeline. This layer acts as the tokenizer in my workflow.
+- Tokenization: I did use a tokenizer during training, but instead of a traditional Tokenizer (e.g., from keras.preprocessing.text), I used a TextVectorization layer as part of my preprocessing pipeline. This layer acts as the tokenizer in my workflow.
 Text Vectorization: Since TensorFlow operates on numeric data, I needed to convert the text into a suitable numerical format (e.g., tokenization).
 I did not account for overfitting.
 
