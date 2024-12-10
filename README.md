@@ -53,17 +53,20 @@ The accuracy and loss fluctuate significantly between epochs (e.g., dropping in 
 2. I had limited differentiation between “neutral” and biased content, requiring further annotation refinements most likely due to the imbalance between the number of “0” and “1” datapoints in my dataset.
 
 Class Concepts
+
 The largest implementation of class concepts was through grounded coding when I was collecting and annotating my data. Inspired by class exercises, I developed a tagging guideline to ensure consistency, transparency, and accountability in my annotations. While I did not create a datasheet for my dataset as we did in a previous assignment, I now understand the value that they hold for understanding and utilizing the data contained. 
 In class 24, we discussed automatic classification and specifically, text categorization. This project was an attempt at a “supervised” machine learning algorithm that tried to find patterns that characterize human-defined categories. I gave the model training data in the form of <x,y> pairs (a binary text dataset) to then go learn h(x) with the space of categories being very small (sentiment analysis: positive/negative, 0/1). This manually labeled data guided the training process. My procedure echoed the flow discussed in this class: define categories, represent data, collect training data, train model, predict, evaluate, interpret. 
 Then when preparing my data for training, I used regular expressions to clean the data and then used a TextVectorization layer as part of my tokenization algorithm. My model utilized vectorization by converting the text into numerical format which was done by using the TF-IDF technique that we learned in class. I then tested my model with concept learned in class such as the F1-Score and accuracy. When my model was finished, I utliized my knowledge of Github from a previous assignment to host my code online for public access. 
 
 Reflection
+
 The annotation process was incredibly time consuming and prone to subjective bias, so I will definitely look to get annotation help in the future. However, I found that transparent annotation guidelines helped me collect data more efficiently and ensured reproducibility and accountability. 
 While I didn’t iterate very much, it is clear that iterative development and feedback loops are essential in ML workflows. I also learned that pre-trained models (like AWS) significantly reduce the barrier to entry for beginners in machine learning. Instead of trying to build something from scratch, you can use a pre-trained model and re-train it with the data you collected to produce a model.
 Eventhough the accuracy of my model wasn’t great, I still really enjoyed learning the process of creating a dataset, cleaning it, training a ML model on it, and testing. This project successfully taught me about the end-to-end machine learning pipeline and, with more time, I hope to produce a state of the art model one day that will really help people.
 
 
 Bibliography
+
 Mitchell, A. (2014, October 21). Section 1: Media sources: Distinct favorites emerge on the left and right. Pew Research Center. https://www.pewresearch.org/journalism/2014/10/21/section-1-media-sources-distinct-favorites-emerge-on-the-left-and-right/ 
 
 https://www.tensorflow.org/tutorials
