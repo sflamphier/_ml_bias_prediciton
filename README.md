@@ -29,6 +29,7 @@ My dataset is pretty imbalanced which definitely caused my model to struggle. If
 Text Vectorization: Since TensorFlow operates on numeric data, I needed to convert the text into a suitable numerical format (e.g., tokenization).
 I did not account for overfitting.
 
+
 4. Training the Model
   The model development phase involved experimenting with different machine learning frameworks, including PyTorch and TensorFlow. I ultimately chose TensorFlow’s framework because it was most intuitive and the help videos were abundant. I trained my model using the tf_dataset.
 
